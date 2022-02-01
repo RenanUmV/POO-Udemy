@@ -1,0 +1,31 @@
+package Lista04;
+
+import java.util.Scanner;
+
+public class Exercicio03 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int n;
+		double n1,n2,n3;
+		double media;
+		int p1 = 2, p2 = 3, p3 = 5; 
+		
+		System.out.print("Informe quantos casos serão passados: ");
+		n = scan.nextInt();
+		
+		for (int i = 0; i < n; i++) {
+			System.out.print("Informe o resultado do primeiro teste: ");
+			n1 = scan.nextDouble();
+			System.out.print("Informe o resultado do segundo teste: ");
+			n2 = scan.nextDouble();
+			System.out.print("Informe o resultado do terceiro teste: ");
+			n3 = scan.nextDouble();
+			
+			media = (n1*p1 + n2*p2 + n3*p3)/(p1+p2+p3);
+			
+			System.out.printf("\nA média foi igual a: " + media);
+		}
+		
+	}
+}

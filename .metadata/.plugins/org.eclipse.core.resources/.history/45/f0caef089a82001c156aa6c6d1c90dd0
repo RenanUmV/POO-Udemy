@@ -1,0 +1,20 @@
+package Lista03;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String senha = "2002";		
+		
+		System.out.print("Digite a senha para ter acesso: ");
+		String senhaDigitada = scan.next();
+		
+		
+		while(senhaDigitada != senha) {
+			System.out.print("Senha Invalida");
+		}
+		
+		System.out.println("Acesso Permitido");
+	}
+}
