@@ -16,5 +16,6 @@ public class Exercicio01 {
 				System.out.println(i);
 			}
 		}
+		scan.close();
 	}
 }
